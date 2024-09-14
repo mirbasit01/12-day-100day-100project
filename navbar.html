@@ -1,0 +1,299 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*         
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+ }
+.nav {
+  height: 90px;
+  background-color: rgb(75, 177, 140);
+  /* border: 2px solid white; */
+  /* position: sticky; */
+  /* top:0; */
+/* }
+ul {
+  display: flex;
+  list-style: none;
+  justify-content:center;
+  gap: 35px;
+  align-items:center;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+
+li{
+  /* background-color:gray; */
+  /* padding: 15px; */ 
+  /* border-radius:7px; */
+/* }
+.text{
+  color:white;
+  font-size:65px;
+  justify-content:center;
+  display:flex;
+  padding:40px;
+}
+  */ 
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(235, 227, 227);
+  }
+  .nav{
+    /* display: flex; */
+    list-style: none;
+    /* justify-content: center; */
+    color: rgb(255, 255, 255);
+    
+  }
+  ul{
+    display: flex;
+    list-style: none;
+    gap: 36px;
+    background-color: rgb(149, 173, 171);
+    padding: 40px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  li{
+    /* padding: 20px; */
+  }
+  li:hover{
+    /* background-color: rgb(0, 0, 0); */
+    /* size: 20px; */
+    color: rgb(134, 223, 134);
+    font-size: 1.2rem;
+  }
+  /* .text{
+    color: white;
+    font-size: 63px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+  } */
+  /* img{
+     height: 100%;
+     width: 100%;
+     /* margin: auto; */
+     
+  /* }  */
+  /* .imgpx{
+    /* justify-content: center;
+     align-items: center;
+     text-align: center; */
+     /* margin: auto; */
+     /* margin-top: 40px; */
+  /* } */
+  .main{
+    display: flex;
+  }
+  p{
+    width: 240px;
+    margin-left: 32px;
+    padding: 40px;
+  }
+  .btn{
+    margin-top:auto;
+    margin-left: 530px;
+
+  }
+  input{
+    /* background-color: rgb(233, 223, 223); */
+    /* color: white; */
+  }
+  h1{
+    margin-left: 32px;
+    margin-top: 80px;
+  }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+          <li>Home</li>
+          <li>Product
+             <ul><li>Basit</li></ul>
+            <ul><li>Wajid</li></ul> -->
+          <!-- </li>
+
+          <li>Contact</li>
+          <li>About us</li>
+        </ul>
+      </div> -->
+      <!-- <div class="imgpx">
+        <img src="main.jpg" alt="">
+      </div> -->
+      <!-- <div class="text">scroll down!</div> -->
+
+      <!-- <div class="main">
+        <h1>Free Developer Resources</h1>
+
+    
+        <div class="btn">
+            <input type="email">
+            <button>
+                SUBSCRIBE</button>
+
+        </div>
+
+        
+
+      </div>
+      <p>Our instructors put together this list of their top free developer resources out of thousands of potential resources in each category.
+        Use these resources to take your projects & career to the next level. </p>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        background: linear-gradient(115deg, #f59802 20%, #0fa8c0 80%);
+
+        /*
+        background-color: rgb(5, 31, 22);*/
+      }
+      
+      .left {
+        font-size: 1.5rem;
+        color: rgb(250, 248, 248);
+        padding-right: 430px;
+        font-family: 'Pacifico', cursive;
+
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        font-family: 'Pacifico', cursive;
+             }
+
+      nav ul li a:hover {
+        color: wheat;
+        font-size: 1.01rem;
+      } 
+      
+ /* NAV END */
+        img{
+            width: 800px;
+            height: 400px;
+        }
+        .wrapper{
+            position: relative;
+
+            width: 800px;
+            height: 400px;
+            margin-left: 260px;
+            margin-top: 100px;
+            background: repeating-conic-gradient(
+                from var(--a),
+                #0fa8c0 0%,
+                #7ac912 5%,
+                transparent 5%,
+                transparent 40%,
+                #f59802 50%
+            );
+            animation: rotate 4s linear infinite;
+            border-radius: 20px;
+        }
+        @property --a {
+            syntax: " <angle> ";
+                inherits: false;
+                initial-value: 0deg;
+        }
+        @keyframes rotate{
+            0% { --a: 0deg; }
+            100% {
+                --a: 360deg;
+            }
+            
+        }
+        .wrapper::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:  repeating-conic-gradient(
+                from var(--a),
+                rgb(168, 239, 255) 0%,
+                rgba(168, 239, 255) 5%,
+                transparent 5%,
+                transparent 40%,
+                rgba(168, 239, 255) 50%,
+            );
+            animation: rotate 4s linear infinite -1s;
+            border-radius: 20px;
+        }
+        .wrapper::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            /* background-color: #262626; */
+            margin: 10px;
+            border-radius: 10px;
+            border: 8px solid #141516;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Nav bar -->
+    <header>
+      <nav>
+        <!--
+        <div class="left"> Hadi Architecture </div> -->
+
+        <div class="left">Had Photosen</div>
+        <div class="right">
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="gallery.html">GALLERY </a></li>
+            <!--
+<li><a href="service.html">SERVICE </a></li> -->
+            <li><a href="contect.html">CONTACT</a></li>
+ 
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--nav bar end -->
+    <div class="wrapper">
+        <img src="main.jpg" alt="">
+    </div>
+</body>
+</html>
